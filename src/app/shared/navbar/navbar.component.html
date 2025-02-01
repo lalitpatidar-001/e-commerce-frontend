@@ -1,0 +1,35 @@
+<nav class="fl-flex fl-items-center fl-justify-between">
+    <div class="left-items fl-flex fl-items-center fl-justify-between">
+        <div class="logo fl-flex fl-items-center">
+            <img src="https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png" alt="logo"/>
+        </div>
+        <div class="menu-links fl-flex fl-justify-between fl-items-center">
+            <a routerLink="">Home</a>
+            <a routerLink="">Men</a>
+            <a routerLink="">Women</a>
+        </div>
+    </div>
+
+    <div class="right-items fl-flex fl-items-center fl-justify-between">
+        <button mat-icon-button>
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button mat-raised-button>
+            Login
+        </button>
+        <div class="profile-menu fl-flex fl-items-center" [matMenuTriggerFor]="profileMenu">
+            <span>Lalit</span>
+            <button mat-icon-button>
+                <mat-icon>person</mat-icon>
+            </button>
+        </div>
+    </div>
+
+</nav>
+
+<!-- menu list -->
+<mat-menu #profileMenu="matMenu">
+    <button mat-menu-item>Orders</button>
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item>Logout</button>
+</mat-menu>

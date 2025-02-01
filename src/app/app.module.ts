@@ -1,4 +1,7 @@
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +12,7 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
 import { SliderComponent } from './shared/slider/slider.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HomeComponent,
     CarouselComponent,
     ProductCardComponent,
-    SliderComponent
+    SliderComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [
     provideAnimationsAsync()

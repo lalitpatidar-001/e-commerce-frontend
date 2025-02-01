@@ -1,8 +1,9 @@
+@import "variables";
 mat-card {
     cursor: pointer;
     border-radius: 12px;
     margin: 2px 12px;
-    background-color: black;
+    background-color: $primary;
     border: 1px solid gray;
     padding-bottom: 5px;
     max-width: 16.3rem;

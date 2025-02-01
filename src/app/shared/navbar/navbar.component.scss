@@ -1,0 +1,50 @@
+@import "variables";
+nav {
+    height: 64px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $primary;
+    padding: 0px 50px;
+
+    .left-items {
+        gap: 40px;
+        .logo {
+            width: 42px;
+            overflow: hidden;
+            img {
+                width: 42px;
+                border-radius: 50%;
+            }
+        }
+
+        .menu-links {
+            gap: 30px;
+            a {
+                color: $primary-text;
+                text-decoration: none;
+                transition: all 0.6 ease-in-out;
+            }
+
+            a:hover {
+                color: $animation-text
+            }
+        }
+    }
+
+    .right-items {
+        gap: 30px;
+
+        .profile-menu {
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+}
