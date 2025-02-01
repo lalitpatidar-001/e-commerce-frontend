@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hideScrollbar ::-webkit-scrollbar {
+    display: none;
+}
+
+.fl-flex {
+    display: flex;
+}
+
+.fl-justify-center {
+    justify-content: center;
+}
