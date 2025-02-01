@@ -34,16 +34,19 @@ $Frontend-theme: mat.define-light-theme((
   // Alternatively, you can import and @include the theme mixins for each component
   // that you are using.
   @include mat.all-component-themes($Frontend-theme);
+  @import "variables";
   
-  body {
+body {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: black;
+      background-color: $primary;
       color: white;
 }
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
     
 h1, h2, h3, h4, p {
     margin: 0;
@@ -53,6 +56,8 @@ h1, h2, h3, h4, p {
 .hide-scrollbar::-webkit-scrollbar { 
     display: none; 
 }
+
+//flex box
 
 .fl-flex {
     display: flex;
@@ -66,10 +71,38 @@ h1, h2, h3, h4, p {
     justify-content: center;
 }
 
+.fl-justify-between {
+    justify-content: space-between;
+}
+
+.fl-items-center {
+    align-items: center;
+}
+
 .fl-flex-no-wrap {
     flex-wrap: nowrap;
 }
 
+//margin
+.margin-t-64 {
+    margin-top: 64px;
+}
+
+
+// buttons
+.mat-mdc-raised-button:not(:disabled) {
+    color: $primary-text !important;
+    background-color: $secondary !important;
+    text-transform: uppercase;
+}
+
+.mat-mdc-raised-button:not(:disabled):hover {
+    background-color: $animation-bg !important;
+}
+
+.mat-mdc-icon-button:hover {
+    color: $animation-text
+}
 
 .truncate-text {
     width: 95%;
