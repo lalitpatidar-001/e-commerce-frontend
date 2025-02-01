@@ -1,5 +1,5 @@
-<section class="carousel-container">
-    <div class="carousel fl-flex">
+<section class="carousel-container ">
+    <div class="carousel fl-flex hide-scrollbar">
         <ng-container  class="" *ngFor="let item of carouselData; let i=index">
             <a *ngIf="currentSlide === i" [routerLink]="item.path" class="carousel-item">
                 <img [src]="item.image" alt="carousel-img"/>
