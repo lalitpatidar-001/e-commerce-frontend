@@ -1,0 +1,41 @@
+mat-card {
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 2px 12px;
+    background-color: black;
+    border: 1px solid gray;
+    padding-bottom: 5px;
+    max-width: 16.3rem;
+    .img-container {
+        overflow: hidden;
+        width: 15rem;
+        padding: 10px;
+        
+        img {
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+            aspect-ratio: 6/8;
+        }
+
+        img:hover {
+            scale: 105%;
+        }     
+    }
+    
+    .product-details {
+        overflow: hidden;
+        padding: 0px 10px;
+        h3 {
+            font-weight: 500;
+            color: white;
+            font-size: 16px;
+        }
+
+        p {
+            margin-top: 8px;
+            color: lightgray;
+            font-size: 12px;
+        }
+    }
+
+}

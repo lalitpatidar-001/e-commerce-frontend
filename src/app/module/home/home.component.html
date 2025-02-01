@@ -1,1 +1,17 @@
-<app-carousel [dataList]="carouselData"></app-carousel>
+<section class="fl-flex fl-flex-col">
+    <app-carousel [dataList]="carouselData"></app-carousel>
+    <ng-container>
+        <app-slider title="Men's Jeans">
+            <app-product-card [product]="product" *ngFor="let product of mensJeansData"></app-product-card>
+        </app-slider>
+        <app-slider title="Women Gouns">
+            <app-product-card [product]="product" *ngFor="let product of womenGouns"></app-product-card>
+        </app-slider>
+        <app-slider title="Lehnga Choli">
+            <app-product-card [product]="product" *ngFor="let product of lehngaCholi"></app-product-card>
+        </app-slider>
+        <app-slider title="Women Top">
+            <app-product-card [product]="product" *ngFor="let product of womentTop"></app-product-card>
+        </app-slider>
+    </ng-container>
+</section>

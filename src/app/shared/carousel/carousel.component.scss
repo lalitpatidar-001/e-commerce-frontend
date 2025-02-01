@@ -5,8 +5,8 @@
         overflow-x: auto;
         
         .carousel-item {
-            width: 100%;
-
+            width: 100vw;
+            overflow: hidden;
             img {
                 width: 100vw;
                 height: auto;
