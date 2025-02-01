@@ -1,0 +1,14 @@
+.slider-container {
+    padding: 30px 50px 0px 50px;
+
+    span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .slider {
+        overflow: hidden;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+}
